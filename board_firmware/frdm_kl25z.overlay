@@ -1,0 +1,36 @@
+/ {
+	aliases {
+		pwm-0 = &pwm0;
+		pwm-1 = &pwm1;
+		pwm-2 = &pwm2;
+	};
+
+	soc {
+		pwm0: pwm@40038000 {
+			compatible = "nxp,kinetis-ftm";
+			reg = <0x40038000 0x88>;
+			prescaler = <2>;
+			period = <1000>;
+			clock-source = <0>;
+			/* channel information needed - fixme */
+		};
+
+		pwm1: pwm@40039000 {
+			compatible = "nxp,kinetis-ftm";
+			reg = <0x40039000 0x88>;
+			prescaler = <2>;
+			period = <1000>;
+			clock-source = <0>;
+			/* channel information needed - fixme */
+		};
+
+		pwm2: pwm@4003a000 {
+			compatible = "nxp,kinetis-ftm";
+			reg = <0x4003a000 0x88>;
+			prescaler = <2>;
+			period = <1000>;
+			clock-source = <0>;
+			/* channel information needed - fixme */
+		};
+	};
+};
