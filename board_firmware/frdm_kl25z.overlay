@@ -7,7 +7,7 @@
 
 	soc {
 		pwm0: pwm@40038000 {
-			compatible = "nxp,kinetis-ftm";
+			compatible = "nxp,kinetis-tpm";
 			reg = <0x40038000 0x88>;
 			prescaler = <2>;
 			period = <1000>;
@@ -16,7 +16,7 @@
 		};
 
 		pwm1: pwm@40039000 {
-			compatible = "nxp,kinetis-ftm";
+			compatible = "nxp,kinetis-tpm";
 			reg = <0x40039000 0x88>;
 			prescaler = <2>;
 			period = <1000>;
@@ -25,7 +25,7 @@
 		};
 
 		pwm2: pwm@4003a000 {
-			compatible = "nxp,kinetis-ftm";
+			compatible = "nxp,kinetis-tpm";
 			reg = <0x4003a000 0x88>;
 			prescaler = <2>;
 			period = <1000>;
